@@ -5,12 +5,12 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        name: {
+        nama: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true
         },
-        description: {
+        deskripsi: {
             type: DataTypes.STRING,
             allowNull: true
         }
@@ -27,6 +27,6 @@ module.exports = (sequelize, DataTypes) => {
             as: 'komiks'
         });
     }
-    
+
     return Genre;
 };
