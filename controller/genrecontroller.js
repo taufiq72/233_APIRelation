@@ -110,3 +110,10 @@ async function remove(req, res) {
     });
   }
 }
+
+module.exports = {
+  getAll,
+  create,
+  update,
+  remove
+};
