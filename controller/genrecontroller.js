@@ -91,7 +91,7 @@ async function remove(req, res) {
       });
     }
 
-    const komik = await genre.getKomik();
+    const komik = await genre.getKomiks();
 
     if (komik.length > 0) {
       return res.status(400).json({

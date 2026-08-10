@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
         penulis_id: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        genre_ids: {
+            type: DataTypes.ARRAY(DataTypes.INTEGER),
+            allowNull: true
         }
     }, {
         tableName: 'komik',

@@ -17,3 +17,5 @@ router.get("/komik", authMiddleware, komikController.getAll);
 router.post("/komik", authMiddleware, komikController.create);
 router.put("/komik/:id", authMiddleware, komikController.update);
 router.delete("/komik/:id", authMiddleware, komikController.remove);
+
+module.exports = router;
